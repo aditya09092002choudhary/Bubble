@@ -120,8 +120,8 @@
     
     
     #element1{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -141,8 +141,8 @@
     }
 
     #element2{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -162,8 +162,8 @@
     }
 
     #element3{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -183,8 +183,8 @@
     }
 
     #element4{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -204,8 +204,8 @@
     }
 
     #element5{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -224,8 +224,8 @@
 
     }
     #element6{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -245,8 +245,8 @@
     }
 
     #element7{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -265,8 +265,8 @@
 
     }
     #element8{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -286,8 +286,8 @@
     }
 
     #element9{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 100%;
         position:absolute;
@@ -307,8 +307,8 @@
     }
 
     #element10{
-        width: 25px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         /* margin: ; */
         border-radius: 90%;
         position:absolute;
@@ -321,15 +321,15 @@
         color: white;
         animation-name: example2;
         animation-duration: 45s;
-        animation-timing-function: linear;
+        animation-timing-function: ease-in-out;
         
     }
         
     
         @keyframes example {
-            0% {bottom: 0px;  top: 100vh;}
+            0% {bottom: 30vh;  top: 95vh;}
             
-            100% {top: 0px;  bottom: 100vh; }
+            100% {top: 30vh;  bottom: 100vh; }
           }
 
         @keyframes example2 {
