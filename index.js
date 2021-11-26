@@ -14,6 +14,7 @@ var t2;
 
 
 
+
 function main(){
 
   t1 = setInterval(function (e) {
@@ -60,6 +61,8 @@ function main(){
             this.classList.add("visiblity");
             // audio = new Audio("BubblePop.wav");
             // audio.play();
+            var song = this.innerHTML;
+            sound(song);
             eid = this.id;
             ccount++;
             // For Score
@@ -94,7 +97,7 @@ function main(){
     // increasing Speed 
     count++;
     if (count % 5 == 0) {
-        time = time - 50;
+        time = time + 100;
         
     }
 }, time);
@@ -122,11 +125,16 @@ t2 = setTimeout(function(){
     document.getElementById("container").style.display= "flex";
     document.querySelector(".result").innerHTML ="Score: " + score;
     clearInterval(t1);
-},60000);
+},120000);
 
 function restart(){
     location.reload();
     clearInterval(t2);
+}
+
+function sound(src){
+    var music = new Audio('sounds/' + src + '.mp3');
+    music.play();
 }
 
 // document.querySelector(".over").addEventListener('click',function(){
