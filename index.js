@@ -122,7 +122,7 @@ t2 = setTimeout(function(){
     document.getElementById("container").style.display= "flex";
     document.querySelector(".result").innerHTML ="Score: " + score;
     clearInterval(t1);
-},120000);
+},60000);
 
 function restart(){
     location.reload();
