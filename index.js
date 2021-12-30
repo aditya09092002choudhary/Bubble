@@ -6,12 +6,17 @@ var count = 0;
 var score = 0;
 var eid, audio;
 var ccount = 0;
-
+var timeleft = 59;
 var time = 1500;
 
 var t1;
 var t2;
 
+// setTimeout(()=>{
+//     timeleft=timeleft-1;
+//     document.getElementById("timeLeft").innerHTML=`${timeleft}`;
+//     setTimeout(1000);
+// },1000);
 
 
 
@@ -44,6 +49,7 @@ function main(){
     element.className = "element";
     element.innerHTML = key;
     document.querySelector(".body").appendChild(element);
+    document.getElementById("timeLeft").innerHTML=`00:${timeleft--}`;
 
     
     console.log(key);
@@ -55,16 +61,16 @@ function main(){
     var x = document.querySelectorAll(".element");
     var i;
     for (i = 0; i < x.length; i++) {
-        //   x[i].style.backgroundColor = "red";
+        
         
         x[i].addEventListener('click', function () {
             this.classList.add("visiblity");
-            // audio = new Audio("BubblePop.wav");
-            // audio.play();
+            
             var song = this.innerHTML;
             sound(song);
             eid = this.id;
             ccount++;
+
             // For Score
             
             if ((eid == 'element1') || (eid == 'element6')) {
@@ -100,7 +106,7 @@ function main(){
         time = time + 100;
         
     }
-}, time);
+}, 1000);
 
 
 }
@@ -125,7 +131,7 @@ t2 = setTimeout(function(){
     document.getElementById("container").style.display= "flex";
     document.querySelector(".result").innerHTML ="Score: " + score;
     clearInterval(t1);
-},120000);
+},60000);
 
 function restart(){
     location.reload();
@@ -137,8 +143,3 @@ function sound(src){
     music.play();
 }
 
-// document.querySelector(".over").addEventListener('click',function(){
-//     start();
-// });
-
-// setTimeout(0);
