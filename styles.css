@@ -25,10 +25,7 @@
         position:fixed;
         top: 0px;
         z-index: 1;
-        /* border-radius: 20px; */
-        /* margin: 0  10px; */
-
-        /* display: none; */
+        
         
     }
 
@@ -41,16 +38,22 @@
         
     }
 
+    
     .status{
         display: flex;
         justify-content: flex-end;
         /* border-radius: 20px; */
 
         /* margin: 10px 20px; */
-
+        
     }
-    .live{
-        margin: 20px 20px;
+    #timel{
+        align-self: flex-start;
+        color: white;
+        margin: 5px;
+    }
+    .life{
+        margin:3px 15px;
         font-size: 25px;
         color: red;
 
