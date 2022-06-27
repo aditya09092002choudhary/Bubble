@@ -138,8 +138,8 @@ function restart(){
     clearInterval(t2);
 }
 
-function sound(src){
-    var music = new Audio('sounds/' + src + '.mp3');
-    music.play();
-}
+// function sound(src){
+//     var music = new Audio('sounds/' + src + '.mp3');
+//     music.play();
+// }
 
